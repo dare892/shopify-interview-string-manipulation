@@ -12,7 +12,7 @@ All commands can be repeated N times by prefixing them with a number
 [N]l: move cursor N characters to the right
 [N]r<c>: replace N characters, starting from the cursor, with <c> and move the cursor
 
-##### requirements
+##### Requirements
 ```
 Ruby
 Rspec
