@@ -21,21 +21,21 @@ class ManipulateString
     command_array = @command.split('')
     while counter < command_array.length
       comm = ''
-      if self.is_i?(command_array[counter])
-        number = ""
+      if is_i?(command_array[counter])
+        temp_number = ""
         counter2 = counter
         while counter2 < command_array.length
           if is_i?(command_array[counter2])
-            number += command_array[counter2]
+            temp_number += command_array[counter2]
             counter += 1
             counter2 += 1
           else
-            number += command_array[counter2]
+            temp_number += command_array[counter2]
             if command_array[counter2] == 'r'
-              comm = number + command_array[counter2+1]
+              comm = temp_number + command_array[counter2+1]
               counter += 1
             else
-              comm = number
+              comm = temp_number
             end
             break
           end
